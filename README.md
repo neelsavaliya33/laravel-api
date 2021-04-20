@@ -18,11 +18,14 @@ Route
     api/login
         method : POST
         required fields : email,password
+        
     api/uplode
         method : POST
         required fields : file(csv,xlsx,xls)
+        
     api/getall
         method : GET
+         
      api/logout
         method : GET
         
