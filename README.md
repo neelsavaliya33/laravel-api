@@ -11,10 +11,12 @@ Excel import
 6. php artisan serve
 
 login credentials
+
     email : admin@gmail.com
     password : 12345678
 
 Route
+
     api/login
         method : POST
         required fields : email,password
