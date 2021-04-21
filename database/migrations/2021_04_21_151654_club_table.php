@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class DataTable extends Migration
+class ClubTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class DataTable extends Migration
      */
     public function up()
     {
-        Schema::create('datas', function (Blueprint $table) {
+        Schema::create('clubs', function (Blueprint $table) {
             $table->id();
-            $table->string('sport_name');
+            $table->string('university');
+            $table->string('sport');
+            $table->string('club_name');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class DataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('datas');
+        Schema::dropIfExists('clubs');
     }
 }

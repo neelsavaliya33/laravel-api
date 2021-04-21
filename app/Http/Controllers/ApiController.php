@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\Excelimport;
+use App\Models\Club;
 use App\Models\Data;
+use App\Models\University;
 use Illuminate\Support\Facades\Auth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
@@ -44,7 +46,11 @@ class ApiController extends Controller
     {
         return response([
             'status' => true,
-            'data' => Data::all()
+            'data' => [
+                'university' => University::all(),
+                'sport' => Data::all(),
+                'club' => Club::all()
+            ]
         ]);
     }
 
