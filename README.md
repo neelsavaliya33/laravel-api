@@ -1,7 +1,6 @@
 <img src="https://laravel.com/img/logotype.min.svg" width="100%">
 
-# laravel 8 api
-Excel import
+# laravel 8 api with Excel import
 
 1. clone repository and open cmd in folder
 
